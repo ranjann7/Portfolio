@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ranjan S — Software Developer</title>
+  <meta name="description" content="Portfolio of Ranjan S, Information Science Engineering student at REVA University, Bengaluru.">
+
+  <!-- Fonts: JetBrains Mono for code-styled accents, Inter for readable body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ BOOT LOADER ============ -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader__terminal">
+      <p class="loader__line"><span class="loader__prompt">$</span> initializing<span class="loader__dots"></span></p>
+      <p class="loader__line loader__line--dim">mounting components... ok</p>
+      <p class="loader__line loader__line--dim">loading profile: ranjan-s.dev</p>
+      <div class="loader__bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ============ SKIP LINK ============ -->
+  <a href="#home" class="skip-link">Skip to content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo" aria-label="Ranjan S home">
+        <span class="nav__logo-bracket">&lt;</span>Ranjan<span class="nav__logo-accent">.S</span><span class="nav__logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#home" class="nav__link active-link" data-nav>Home</a></li>
+        <li><a href="#about" class="nav__link" data-nav>About</a></li>
+        <li><a href="#education" class="nav__link" data-nav>Education</a></li>
+        <li><a href="#skills" class="nav__link" data-nav>Skills</a></li>
+        <li><a href="#projects" class="nav__link" data-nav>Projects</a></li>
+        <li><a href="#achievements" class="nav__link" data-nav>Achievements</a></li>
+        <li><a href="#contact" class="nav__link" data-nav>Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark and light mode" title="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button id="navToggle" class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__grid">
+
+        <div class="hero__content" data-reveal>
+          <p class="eyebrow">// available for internships · 2026</p>
+          <h1 class="hero__title">
+            Hi, I'm <span class="text-gradient">Ranjan S</span>
+          </h1>
+          <h2 class="hero__subtitle">Information Science Engineering Student</h2>
+
+          <p class="hero__role">
+            <span class="hero__role-prefix">I build things as a</span>
+            <span class="typing-wrap">
+              <span id="typedRole" class="typing-text"></span><span class="typing-cursor">|</span>
+            </span>
+          </p>
+
+          <p class="hero__intro">
+            First-year B.Tech student at <strong>REVA University, Bengaluru</strong>, exploring the
+            intersection of web development, artificial intelligence, and clean software design.
+            I like turning ideas into working products &mdash; one commit at a time.
+          </p>
+
+          <div class="hero__buttons">
+            <a href="#projects" class="btn btn--primary">
+              <i class="fa-solid fa-diagram-project"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn--ghost">
+              <i class="fa-regular fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+
+          <div class="hero__socials">
+            <a href="https://github.com/ranjann7" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ranjans7639/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:ranjann0205@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Signature element: quiet code-window card, no avatar/photo -->
+        <div class="hero__visual" data-reveal data-reveal-delay="150">
+          <div class="code-window">
+            <div class="code-window__bar">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="code-window__filename">ranjan.js</span>
+            </div>
+
+            <div class="code-window__body">
+              <pre class="code-window__code"><code><span class="tok-kw">const</span> <span class="tok-var">developer</span> <span class="tok-punc">=</span> <span class="tok-punc">{</span>
+  <span class="tok-prop">name</span><span class="tok-punc">:</span> <span class="tok-str">"Ranjan S"</span><span class="tok-punc">,</span>
+  <span class="tok-prop">college</span><span class="tok-punc">:</span> <span class="tok-str">"REVA University"</span><span class="tok-punc">,</span>
+  <span class="tok-prop">year</span><span class="tok-punc">:</span> <span class="tok-str">"1st Year, B.Tech ISE"</span><span class="tok-punc">,</span>
+  <span class="tok-prop">interests</span><span class="tok-punc">:</span> <span class="tok-punc">[</span><span class="tok-str">"Web Dev"</span><span class="tok-punc">,</span> <span class="tok-str">"AI/ML"</span><span class="tok-punc">]</span><span class="tok-punc">,</span>
+  <span class="tok-prop">status</span><span class="tok-punc">:</span> <span class="tok-str">"open to internships"</span>
+<span class="tok-punc">}</span><span class="tok-punc">;</span></code></pre>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="eyebrow" data-reveal>// about-me</p>
+        <h2 class="section__title" data-reveal>Who I Am</h2>
+
+        <div class="about__grid">
+          <div class="about__text" data-reveal>
+            <p>
+              I'm a first-year Information Science Engineering student at REVA University, Bengaluru,
+              with a genuine passion for technology and how it shapes the way people live and work.
+              What started as curiosity about how websites function has grown into a focused interest
+              in software development.
+            </p>
+            <p>
+              I enjoy the process of building &mdash; breaking down a problem, designing a solution, and
+              watching it come together in code. I'm drawn to <strong>Web Development</strong> for its
+              immediate, visual feedback, and to <strong>Artificial Intelligence &amp; Machine Learning</strong>
+              for the way it lets software learn and adapt. Alongside that, I'm developing a strong
+              foundation in core software engineering principles and problem-solving.
+            </p>
+            <p>
+              I hold a continuous-learning mindset &mdash; comfortable picking up new tools, languages, and
+              frameworks as projects demand them. I'm currently looking for
+              <strong> internship opportunities</strong> where I can contribute, learn from experienced
+              engineers, and grow into a well-rounded software developer.
+            </p>
+          </div>
+
+          <div class="about__stats" data-reveal data-reveal-delay="150">
+            <div class="stat-card">
+              <i class="fa-solid fa-code"></i>
+              <span class="stat-card__num">1st</span>
+              <span class="stat-card__label">Year B.Tech ISE</span>
+            </div>
+            <div class="stat-card">
+              <i class="fa-solid fa-diagram-project"></i>
+              <span class="stat-card__num">1+</span>
+              <span class="stat-card__label">Projects Built</span>
+            </div>
+            <div class="stat-card">
+              <i class="fa-brands fa-github"></i>
+              <span class="stat-card__num">Active</span>
+              <span class="stat-card__label">GitHub Contributor</span>
+            </div>
+            <div class="stat-card">
+              <i class="fa-solid fa-briefcase"></i>
+              <span class="stat-card__num">Open</span>
+              <span class="stat-card__label">To Internships</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section section--alt" id="education">
+      <div class="container">
+        <p class="eyebrow" data-reveal>// education</p>
+        <h2 class="section__title" data-reveal>Academic Background</h2>
+
+        <div class="timeline">
+          <div class="timeline__item" data-reveal>
+            <div class="timeline__marker"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline__card">
+              <span class="timeline__badge">2025 &ndash; 2029 (Expected)</span>
+              <h3>B.Tech in Information Science Engineering</h3>
+              <p class="timeline__org"><i class="fa-solid fa-building-columns"></i> REVA University</p>
+              <p class="timeline__location"><i class="fa-solid fa-location-dot"></i> Bengaluru, Karnataka</p>
+              <p class="timeline__desc">
+                Currently in my first year, building a foundation in programming, data structures,
+                and core computer science concepts &mdash; while exploring web development and AI/ML
+                through self-driven projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <p class="eyebrow" data-reveal>// skills</p>
+        <h2 class="section__title" data-reveal>What I Work With</h2>
+
+        <div class="skills__grid">
+
+          <div class="skill-card" data-reveal>
+            <h3 class="skill-card__title"><i class="fa-solid fa-terminal"></i> Programming</h3>
+            <div class="chip-grid">
+              <span class="chip"><i class="fa-solid fa-c"></i> C</span>
+              <span class="chip"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="chip"><i class="fa-brands fa-square-js"></i> JavaScript</span>
+              <span class="chip"><i class="fa-brands fa-html5"></i> HTML</span>
+              <span class="chip"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-reveal data-reveal-delay="100">
+            <h3 class="skill-card__title"><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h3>
+            <div class="chip-grid">
+              <span class="chip"><i class="fa-brands fa-git-alt"></i> Git</span>
+              <span class="chip"><i class="fa-brands fa-github"></i> GitHub</span>
+              <span class="chip"><i class="fa-solid fa-code"></i> VS Code</span>
+              <span class="chip"><i class="fa-solid fa-book"></i> Jupyter Notebook</span>
+            </div>
+
+            <h3 class="skill-card__title skill-card__title--spaced"><i class="fa-solid fa-database"></i> Database</h3>
+            <div class="chip-grid">
+              <span class="chip"><i class="fa-solid fa-database"></i> SQL</span>
+              <span class="chip"><i class="fa-solid fa-bolt"></i> Supabase</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-reveal data-reveal-delay="200">
+            <h3 class="skill-card__title"><i class="fa-solid fa-spinner"></i> Currently Learning</h3>
+            <ul class="learning-list">
+              <li><i class="fa-solid fa-sitemap"></i> Data Structures &amp; Algorithms</li>
+              <li><i class="fa-solid fa-brain"></i> Machine Learning</li>
+              <li><i class="fa-brands fa-react"></i> React</li>
+              <li><i class="fa-brands fa-node-js"></i> Node.js</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <p class="eyebrow" data-reveal>// projects</p>
+        <h2 class="section__title" data-reveal>Things I've Built</h2>
+
+        <div class="projects__grid">
+          <article class="project-card" data-reveal>
+            <div class="project-card__preview">
+              <div class="project-card__window">
+                <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+              </div>
+              <div class="project-card__preview-body">
+                <i class="fa-solid fa-calendar-check project-card__preview-icon"></i>
+                <span>novex.app</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3>Novex &mdash; Event Management System</h3>
+              <p>
+                A web-based event management platform that lets students browse and register for
+                events, while giving administrators a dedicated dashboard to create, manage, and
+                monitor events in real time.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Supabase</span>
+              </div>
+              <a href="https://github.com/ranjann7/Novex" target="_blank" rel="noopener" class="project-card__link">
+                <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card project-card--placeholder" data-reveal data-reveal-delay="100">
+            <div class="project-card__preview project-card__preview--dashed">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="project-card__body">
+              <h3>More on the Way</h3>
+              <p>
+                Currently building out new projects around AI/ML and full-stack web development.
+                Check back soon &mdash; or take a look at my GitHub for work in progress.
+              </p>
+              <a href="https://github.com/ranjann7" target="_blank" rel="noopener" class="project-card__link">
+                <i class="fa-brands fa-github"></i> Visit GitHub Profile <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <p class="eyebrow" data-reveal>// achievements</p>
+        <h2 class="section__title" data-reveal>Milestones</h2>
+
+        <div class="achievements__grid">
+          <div class="achievement-card" data-reveal>
+            <div class="achievement-card__icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Multiple Web Projects</h3>
+            <p>Built and shipped several web development projects, including a full event
+              management platform with an admin dashboard.</p>
+          </div>
+          <div class="achievement-card" data-reveal data-reveal-delay="100">
+            <div class="achievement-card__icon"><i class="fa-brands fa-github"></i></div>
+            <h3>Active GitHub Contributor</h3>
+            <p>Regularly commit code, maintain repositories, and document projects publicly
+              on GitHub.</p>
+          </div>
+          <div class="achievement-card" data-reveal data-reveal-delay="200">
+            <div class="achievement-card__icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <h3>Hackathon Participant</h3>
+            <p>Participated in hackathons to build under time constraints, collaborate in
+              teams, and pitch working prototypes.</p>
+          </div>
+          <div class="achievement-card" data-reveal data-reveal-delay="300">
+            <div class="achievement-card__icon"><i class="fa-solid fa-book-open"></i></div>
+            <h3>Self-Directed Learner</h3>
+            <p>Continuously learning new technologies outside the classroom &mdash; from
+              databases to machine learning fundamentals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <p class="eyebrow" data-reveal>// contact</p>
+        <h2 class="section__title" data-reveal>Let's Connect</h2>
+        <p class="section__subtitle" data-reveal>
+          Have an internship opportunity, a project idea, or just want to say hi? My inbox is open.
+        </p>
+
+        <div class="contact__grid">
+          <div class="contact__info" data-reveal>
+            <a href="mailto:ranjann0205@gmail.com" class="contact__info-item">
+              <span class="contact__info-icon"><i class="fa-regular fa-envelope"></i></span>
+              <span>
+                <strong>Email</strong>
+                <small>ranjann0205@gmail.com</small>
+              </span>
+            </a>
+            <a href="https://github.com/ranjann7" target="_blank" rel="noopener" class="contact__info-item">
+              <span class="contact__info-icon"><i class="fa-brands fa-github"></i></span>
+              <span>
+                <strong>GitHub</strong>
+                <small>github.com/ranjann7</small>
+              </span>
+            </a>
+            <a href="https://www.linkedin.com/in/ranjans7639/" target="_blank" rel="noopener" class="contact__info-item">
+              <span class="contact__info-icon"><i class="fa-brands fa-linkedin"></i></span>
+              <span>
+                <strong>LinkedIn</strong>
+                <small>linkedin.com/in/ranjans7639</small>
+              </span>
+            </a>
+            <div class="contact__info-item contact__info-item--static">
+              <span class="contact__info-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <span>
+                <strong>Location</strong>
+                <small>Bengaluru, India</small>
+              </span>
+            </div>
+          </div>
+
+          <form class="contact__form" id="contactForm" data-reveal data-reveal-delay="150" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Ranjan S" value="Ranjan S">
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="ranjann0205@gmail.com" value="ranjann0205@gmail.com">
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Let's collaborate on...">
+              <span class="form-error" id="subjectError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">
+              <i class="fa-regular fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-success" id="formSuccess" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#home" class="nav__logo">
+          <span class="nav__logo-bracket">&lt;</span>Ranjan<span class="nav__logo-accent">.S</span><span class="nav__logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer__tagline">Aspiring Software Developer &middot; Bengaluru, India</p>
+      </div>
+
+      <div class="footer__socials">
+        <a href="https://github.com/ranjann7" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ranjans7639/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:ranjann0205@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+
+      <p class="footer__copy">&copy; <span id="year"></span> Ranjan S. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <!-- ============ BACK TO TOP ============ -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
